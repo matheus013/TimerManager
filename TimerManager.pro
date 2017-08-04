@@ -3,9 +3,17 @@ TEMPLATE = app
 QT += qml quick
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += main.cpp  \ objects/day.cpp \
+    objects/schoolclass.cpp \
+    objects/schoolhours.cpp \
+    objects/theme.cpp \
+    objects/teacher.cpp \
+    objects/restrictions.cpp \
+    objects/code.cpp
 
 RESOURCES += qml.qrc
+
+
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -28,3 +36,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+HEADERS += \
+    objects/schoolclass.h \ objects/day.h \
+    objects/schoolhours.h \
+    objects/theme.h \
+    objects/teacher.h \
+    objects/restrictions.h \
+    objects/code.h
