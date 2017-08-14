@@ -3,7 +3,8 @@ TEMPLATE = app
 QT += qml quick
 CONFIG += c++11
 
-SOURCES += main.cpp  \ objects/day.cpp \
+SOURCES += main.cpp  \
+    objects/day.cpp \
     objects/schoolclass.cpp \
     objects/schoolhours.cpp \
     objects/theme.cpp \
@@ -38,14 +39,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    \ \
     objects/code.hpp \
     objects/day.hpp \
     objects/restrictions.hpp \
     objects/schoolclass.hpp \
     objects/schoolhours.hpp \
     objects/teacher.hpp \
-    objects/theme.hpp
+    objects/theme.hpp \
+    assets/cpp/qqmlobjectlistmodel.h
 
 DISTFILES += \
     objects/QQmlHelpers
