@@ -12,6 +12,5 @@
         <file>BComponents/RadioButton.qml</file>
         <file>BComponents/Sidebar.qml</file>
         <file>BComponents/TextLine.qml</file>
-        <file>main.cpp</file>
     </qresource>
 </RCC>
