@@ -46,12 +46,14 @@ Window {
             anchors.fill: parent
             z: -100
         }
-        Item {
-            StackView {
 
-            }
+        StackView {
+            anchors.fill: parent
+            initialItem: Home{}
 
         }
+
+
 
     }
 
