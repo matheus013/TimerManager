@@ -19,6 +19,7 @@ Item {
     property int coolDownTime : 400
     property real borderWidth : 0
     property string borderColor : "#000"
+    property string xxt: "000"
     height:parent.height/10; width:parent.width/8
     Timer {
         id: timer

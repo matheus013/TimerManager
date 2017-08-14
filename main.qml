@@ -1,6 +1,7 @@
-import QtQuick 2.6
-import QtQuick.Window 2.2
+import QtQuick 2.9
+import QtQuick.Window 2.3
 import QtQuick.Controls 2.2
+import "qrc:/components" as BComponents
 
 
 Window {
@@ -19,36 +20,81 @@ Window {
         Item {
             height: hpercent(drawer, 80)
             width: wpercent(drawer, 80)
-            Row{
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            Column{
+                height: hpercent(parent, 80)
+                width: wpercent(parent, 100)
                 spacing: wpercent(parent,2)
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.fill: parent
-                Button{
-
+                anchors.verticalCenter: parent.verticalCenter
+                BComponents.Button{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: wpercent(parent,80)
+                    height: hpercent(parent, 10)
+                    action.onClicked: {
+                        test.color = "blue"
+                    }
                 }
-                Button{
-
+                BComponents.Button{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: wpercent(parent,80)
+                    height: hpercent(parent, 10)
+                    action.onClicked: {
+                        test.color = "red"
+                    }
                 }
-                Button{
-
+                BComponents.Button{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: wpercent(parent,80)
+                    height: hpercent(parent, 10)
+                    action.onClicked: {
+                        test.color = "green"
+                    }
                 }
-                Button{
-
+                BComponents.Button{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: wpercent(parent,80)
+                    height: hpercent(parent, 10)
+                    action.onClicked: {
+                        test.color = "black"
+                    }
                 }
+                BComponents.Button{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: wpercent(parent,80)
+                    height: hpercent(parent, 10)
+                    action.onClicked: {
+                        test.color = "blue"
+                    }
+                }
+
             }
         }
     }
+
+
     Label {
         id: content
-
-        text: "Aa"
-        font.pixelSize: 96
         anchors.fill: parent
         verticalAlignment: Label.AlignVCenter
         horizontalAlignment: Label.AlignHCenter
 
-        transform: Translate {
-            x: drawer.position * content.width * 0.33
+                transform: Translate {
+                    x: drawer.position * content.width * 0.30
+                }
+        BComponents.ImageButton{
+            id: button_menu
+            color: "black"
+            source: "/imgs/menu.png"
+            action.onClicked: {
+                drawer.open()
+            }
+        }
+        Rectangle {
+            id: test
+            anchors.fill: parent
+            z: -100
         }
     }
 

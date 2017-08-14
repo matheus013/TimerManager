@@ -14,7 +14,7 @@ Item {
     property alias imageColor: colorOverlay.color
     property bool lotOfClicks : false
     property int coolDownTime : 400
-    height:parent.height/10; width:parent.width/8
+    height:parent.height/12; width:height
     Timer {
         id: timer
         interval: lotOfClicks?0:coolDownTime
