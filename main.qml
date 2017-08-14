@@ -41,13 +41,9 @@ Window {
                 drawer.open()
             }
         }
-        Rectangle {
-            id: test
-            anchors.fill: parent
-            z: -100
-        }
 
         StackView {
+            id: stack
             anchors.fill: parent
             initialItem: Home{}
 
