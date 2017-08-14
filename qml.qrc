@@ -1,17 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>BComponents/Button.qml</file>
-        <file>BComponents/Card.qml</file>
-        <file>BComponents/components.qrc</file>
-        <file>BComponents/Frame.qml</file>
-        <file>BComponents/functions.js</file>
-        <file>BComponents/ImageButton.qml</file>
-        <file>BComponents/NotificationSystem.qml</file>
-        <file>BComponents/PopUpWindow.qml</file>
-        <file>BComponents/RadioButton.qml</file>
-        <file>BComponents/Sidebar.qml</file>
-        <file>BComponents/TextLine.qml</file>
-        <file>main.cpp</file>
+        <file>ColumnOptions.qml</file>
     </qresource>
 </RCC>

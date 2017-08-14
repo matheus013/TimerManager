@@ -12,7 +12,9 @@ SOURCES += main.cpp  \
     objects/restrictions.cpp \
     objects/code.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc \
+    imgs.qrc \
+    BComponents/components.qrc
 
 
 
@@ -38,6 +40,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+
 HEADERS += \
     objects/code.hpp \
     objects/day.hpp \
@@ -49,4 +52,4 @@ HEADERS += \
     assets/cpp/qqmlobjectlistmodel.h
 
 DISTFILES += \
-    objects/QQmlHelpers
+    objects/QQmlHelpers \
