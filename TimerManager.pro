@@ -38,9 +38,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    objects/schoolclass.h \ objects/day.h \
-    objects/schoolhours.h \
-    objects/theme.h \
-    objects/teacher.h \
-    objects/restrictions.h \
-    objects/code.h
+    \ \
+    objects/code.hpp \
+    objects/day.hpp \
+    objects/restrictions.hpp \
+    objects/schoolclass.hpp \
+    objects/schoolhours.hpp \
+    objects/teacher.hpp \
+    objects/theme.hpp
+
+DISTFILES += \
+    objects/QQmlHelpers

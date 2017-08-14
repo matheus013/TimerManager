@@ -1,6 +1,7 @@
 #ifndef THEME_H
 #define THEME_H
 
+#include "QQmlHelpers"
 #include <QObject>
 
 class Theme : public QObject
@@ -9,9 +10,6 @@ class Theme : public QObject
 public:
     explicit Theme(QObject *parent = nullptr);
 
-signals:
-
-public slots:
 };
 
 #endif // THEME_H

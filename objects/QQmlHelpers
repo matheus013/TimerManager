@@ -1,0 +1,2 @@
+#include "./assets/cpp/qqmlhelpers.h"
+#include "./assets/cpp/qqmlobjectlistmodel.h"

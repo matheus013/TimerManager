@@ -1,14 +1,14 @@
 #ifndef CODE_H
 #define CODE_H
 
-#include "../assets/cpp/qqmlobjectlistmodel.h"
+#include "QQmlHelpers"
 #include <QObject>
 
 class Code : public QObject {
     Q_OBJECT
-    QML_OBJMODEL_PROPERTY(QString, code)
-    QML_OBJMODEL_PROPERTY(QString, email)
-    QML_OBJMODEL_PROPERTY(int, level)
+    QML_WRITABLE_PROPERTY(QString, code)
+    QML_WRITABLE_PROPERTY(QString, email)
+    QML_WRITABLE_PROPERTY(int, level)
 public:
     explicit Code(QObject *parent = nullptr);
 
