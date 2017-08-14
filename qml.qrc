@@ -3,5 +3,7 @@
         <file>main.qml</file>
         <file>ColumnOptions.qml</file>
         <file>Home.qml</file>
+        <file>Screens.qml</file>
+        <file>Description.qml</file>
     </qresource>
 </RCC>

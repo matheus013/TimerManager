@@ -37,6 +37,7 @@ Window {
             id: button_menu
             color: "black"
             source: "/imgs/menu.png"
+            z: 10000
             action.onClicked: {
                 drawer.open()
             }
@@ -45,7 +46,7 @@ Window {
         StackView {
             id: stack
             anchors.fill: parent
-            initialItem: Home{}
+            initialItem: Description{}
 
         }
 

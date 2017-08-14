@@ -14,7 +14,8 @@ SOURCES += main.cpp  \
 
 RESOURCES += qml.qrc \
     imgs.qrc \
-    BComponents/components.qrc
+    BComponents/components.qrc \
+    screens.qrc
 
 
 
