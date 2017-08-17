@@ -24,7 +24,6 @@ Window {
         }
 
     }
-
     Label {
         id: content
         anchors.fill: parent
@@ -37,22 +36,15 @@ Window {
             id: button_menu
             color: "black"
             source: "/imgs/menu.png"
+            z: 10000
             action.onClicked: {
                 drawer.open()
             }
         }
-        Rectangle {
-            id: test
+        StackView {
+            id: stack
             anchors.fill: parent
-            z: -100
+            initialItem: Register{}
         }
-        Item {
-            StackView {
-
-            }
-
-        }
-
     }
-
 }

@@ -20,16 +20,19 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             width: wpercent(parent, 80)
             height: hpercent(parent, 10)
+            text: "Login"
             action.onClicked: {
                 test.color = "blue"
             }
         }
         BComponents.Button {
+            text: "Cadastro"
             anchors.horizontalCenter: parent.horizontalCenter
             width: wpercent(parent,80)
             height: hpercent(parent, 10)
             action.onClicked: {
-                test.color = "red"
+                stack.push(aboutComponent)
+
             }
         }
         BComponents.Button {
@@ -56,6 +59,14 @@ Item {
                 test.color = "blue"
             }
         }
+    }
+    Component{
+        id: aboutComponent
+        Description {}
+    }
+    Component{
+        id: registerComponent
+        Register {}
     }
 }
 
