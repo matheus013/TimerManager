@@ -24,7 +24,6 @@ Window {
         }
 
     }
-
     Label {
         id: content
         anchors.fill: parent
@@ -42,16 +41,10 @@ Window {
                 drawer.open()
             }
         }
-
         StackView {
             id: stack
             anchors.fill: parent
-            initialItem: Description{}
-
+            initialItem: Register{}
         }
-
-
-
     }
-
 }
