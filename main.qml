@@ -3,6 +3,7 @@ import QtQuick.Window 2.0
 import QtQuick.Controls 2.0
 import "qrc:/components" as BComponents
 import "qrc:/" as Costum
+import
 
 
 Window {
