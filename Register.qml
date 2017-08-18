@@ -52,6 +52,7 @@ Item {
                 placeholderText: qsTr("Senha")
                 height: hpercent(parent.parent,10); width: wpercent(parent.parent,45)
                 anchors.centerIn: parent
+                echoMode: TextInput.Password
             }
         }
         Item{
