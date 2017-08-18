@@ -33,6 +33,7 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 font.pixelSize: wpercent(parent,7.5)
+
             }
         }
         Item{
