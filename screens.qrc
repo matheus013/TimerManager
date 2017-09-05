@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>About.qml</file>
         <file>Register.qml</file>
+        <file>Painel.qml</file>
+        <file>account.qml</file>
     </qresource>
 </RCC>

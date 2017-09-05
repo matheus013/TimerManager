@@ -4,7 +4,6 @@ import QtQuick.Layouts 1.3
 Item {
     property string title: ""
     property string main_text: ""
-    anchors.fill: parent
     Column{
         width: wpercent(parent, 90)
         height: hpercent(parent, 80)
@@ -24,7 +23,7 @@ Item {
                 Text {
                     anchors.verticalCenter: parent.verticalCenter
                     id: titleContent
-                    text: qsTr("Title")
+                    text: qsTr(title)
                     elide: Text.ElideNone
                 }
                 Rectangle{
@@ -42,7 +41,7 @@ Item {
                 width: parent.width
                 horizontalAlignment: Text.AlignJustify
                 Layout.fillWidth: true
-                text: qsTr("aajk lsjdka skjdg aksjlgd jklasg djklgaskljdg aksjgd jkagsldkj gaskljdg aklsjg dkjlags kjldgaksjl gdjklag sdjklg askjldgkajl gsdkljg askjldg aksjlgdk ajlsdk jlgasdkjlgaskjl gdjkasg kjdgaskj gdkjlasg dkjlgaskjl gdkjasg kjldga skjdg jkgaajk lsjdka skjdg aksjlgd jklasg djklgaskljdg aksjgd jkagsldkj gaskljdg aklsjg dkjlags kjldgaksjl gdjklag sdjklg askjldgkajl gsdkljg askjldg aksjlgdk ajlsdk jlgasdkjlgaskjl gdjkasg kjdgaskj gdkjlasg dkjlgaskjl gdkjasg kjldga skjdg jkgaajk lsjdka skjdg aksjlgd jklasg djklgaskljdg aksjgd jkagsldkj gaskljdg aklsjg dkjlags kjldgaksjl gdjklag sdjklg askjldgkajl gsdkljg askjldg aksjlgdk ajlsdk jlgasdkjlgaskjl gdjkasg kjdgaskj gdkjlasg dkjlgaskjl gdkjasg kjldga skjdg jkg")
+                text: qsTr(main_text)
                 elide: Text.ElideMiddle
             }
         }

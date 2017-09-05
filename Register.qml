@@ -7,18 +7,6 @@ import "qrc:/components" as BComponents
 
 Item {
     property int width_drawer: 25
-
-    anchors.fill: parent
-    LinearGradient {
-        anchors.fill: parent
-        start: Qt.point(0, 0)
-        end: Qt.point(root.width, root.height)
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: "#39427b" }
-            GradientStop { position: 1.0; color: "#9a64c4" }
-        }
-    }
-
     Column {
         height: hpercent(parent, 80)
         width: wpercent(parent, 100)
@@ -93,6 +81,9 @@ Item {
                     height: hpercent(parent, 30)
                     color: "#fbb03b"
                     text: "Cancelar"
+                    action.onClicked: {
+                        stack.pop()
+                    }
                 }
             }
         }

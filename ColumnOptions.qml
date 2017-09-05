@@ -20,9 +20,10 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             width: wpercent(parent, 80)
             height: hpercent(parent, 10)
-            text: "Login"
+            text: "Início"
             action.onClicked: {
-                test.color = "blue"
+                stack.push(aboutComponent)
+                drawer.close()
             }
         }
         BComponents.Button {
@@ -31,16 +32,22 @@ Item {
             width: wpercent(parent,80)
             height: hpercent(parent, 10)
             action.onClicked: {
-                stack.push(aboutComponent)
-
+                stack.push(registerComponent)
+                drawer.close()
             }
         }
         BComponents.Button {
+            text: "Painel"
             anchors.horizontalCenter: parent.horizontalCenter
             width: wpercent(parent, 80)
             height: hpercent(parent, 10)
             action.onClicked: {
-                test.color = "green"
+                stack.push(painelComponent)
+                drawer.close()
+            }
+            Component.onCompleted: {
+                console.log(width)
+                console.log(height)
             }
         }
         BComponents.Button {
@@ -52,6 +59,7 @@ Item {
             }
         }
         BComponents.Button {
+            text: "minha conta"
             anchors.horizontalCenter: parent.horizontalCenter
             width: wpercent(parent, 80)
             height: hpercent(parent, 10)
@@ -67,6 +75,10 @@ Item {
     Component{
         id: registerComponent
         Register {}
+    }
+    Component{
+        id: painelComponent
+        Painel {}
     }
 }
 

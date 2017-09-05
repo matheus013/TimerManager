@@ -3,7 +3,7 @@ import QtQuick.Window 2.3
 import QtQuick.Controls 2.2
 import "qrc:/components" as BComponents
 import "qrc:/" as Costum
-
+import QtGraphicalEffects 1.0
 
 Window {
     function hpercent(ref,percent) { return (ref.height/100)*percent; }
@@ -19,9 +19,7 @@ Window {
         id: drawer
         height: hpercent(root, 100)
         width: wpercent(root, width_drawer)
-        ColumnOptions {
-
-        }
+        ColumnOptions {}
 
     }
     Label {
@@ -41,10 +39,19 @@ Window {
                 drawer.open()
             }
         }
+        LinearGradient {
+            anchors.fill: parent
+            start: Qt.point(0, 0)
+            end: Qt.point(root.width, root.height)
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#39427b" }
+                GradientStop { position: 1.0; color: "#9a64c4" }
+            }
+        }
         StackView {
             id: stack
             anchors.fill: parent
-            initialItem: Register{}
+            initialItem: Painel{}
         }
     }
 }
