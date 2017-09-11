@@ -70,7 +70,7 @@ Item {
     }
     Component{
         id: aboutComponent
-        Description {}
+        About {}
     }
     Component{
         id: registerComponent

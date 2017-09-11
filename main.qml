@@ -51,7 +51,7 @@ Window {
         StackView {
             id: stack
             anchors.fill: parent
-            initialItem: Painel{}
+            initialItem: About{}
         }
     }
 }
