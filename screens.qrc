@@ -4,5 +4,7 @@
         <file>Register.qml</file>
         <file>Painel.qml</file>
         <file>account.qml</file>
+        <file>ListTeacher.qml</file>
+        <file>TeacherModel.qml</file>
     </qresource>
 </RCC>
