@@ -6,5 +6,6 @@
         <file>account.qml</file>
         <file>ListTeacher.qml</file>
         <file>TeacherModel.qml</file>
+        <file>NewTeacher.qml</file>
     </qresource>
 </RCC>

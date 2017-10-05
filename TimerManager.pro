@@ -10,7 +10,8 @@ SOURCES += main.cpp  \
     objects/theme.cpp \
     objects/teacher.cpp \
     objects/restrictions.cpp \
-    objects/code.cpp
+    objects/code.cpp \
+    cheatclasss.cpp
 
 RESOURCES += qml.qrc \
     imgs.qrc \
@@ -50,7 +51,8 @@ HEADERS += \
     objects/schoolhours.hpp \
     objects/teacher.hpp \
     objects/theme.hpp \
-    assets/cpp/qqmlobjectlistmodel.h
+    assets/cpp/qqmlobjectlistmodel.h \
+    cheatclasss.h
 
 DISTFILES += \
     objects/QQmlHelpers \

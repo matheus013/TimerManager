@@ -37,6 +37,7 @@ Item {
             }
         }
         BComponents.Button {
+            visible: root.session
             text: "Painel"
             anchors.horizontalCenter: parent.horizontalCenter
             width: wpercent(parent, 80)
@@ -59,12 +60,12 @@ Item {
             }
         }
         BComponents.Button {
-            text: "minha conta"
+            text: (root.session)?"minha conta":"login"
             anchors.horizontalCenter: parent.horizontalCenter
             width: wpercent(parent, 80)
             height: hpercent(parent, 10)
             action.onClicked: {
-                test.color = "blue"
+                root.session = !root.session
             }
         }
     }

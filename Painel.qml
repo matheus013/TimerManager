@@ -18,7 +18,7 @@ Item {
                     height: hpercent(root, 6.4)
                     text: "gerenciar professores"
                     action.onClicked: {
-                        backgroundStack.color = "green"
+//                        backgroundStack.color = "green"
                     }
                 }
             }
@@ -31,7 +31,7 @@ Item {
                     height: hpercent(root, 6.4)
                     text: "gerenciar turmas"
                     action.onClicked: {
-                        backgroundStack.color = "red"
+//                        backgroundStack.color = "red"
                     }
                 }
             }
@@ -44,12 +44,12 @@ Item {
                     height: hpercent(root, 6.4)
                     text: "gerenciar diciplinas"
                     action.onClicked: {
-                        backgroundStack.color = "blue"
+//                        backgroundStack.color = "blue"
                     }
                 }
             }
         }
-         Rectangle{
+         Item{
             id: backgroundStack
             width: wpercent(parent, 100)
             height: hpercent(parent, 70)

@@ -9,6 +9,7 @@ Window {
     function hpercent(ref,percent) { return (ref.height/100)*percent; }
     function wpercent(ref,percent) { return (ref.width/100)*percent; }
     property int width_drawer: 25
+    property bool session: false
     id: root
     visible: true
     width: 800
