@@ -64,6 +64,7 @@ Item {
             Item{
                 width: wpercent(parent,50)
                 height: hpercent(parent,100)
+                TeacherModel{}
                 BComponents.Button {
                     anchors.centerIn: parent
                     width: wpercent(parent, 25)
@@ -71,7 +72,13 @@ Item {
                     color: "#fbb03b"
                     text: "Confirmar"
                     action.onClicked: {
-models
+                        modelsTeacher.append
+                                ({
+                                     "name": "Bill Smith",
+                                     "number": "555 3264",
+                                     "worktime": "40",
+                                     "updateRestrictions": "false"
+                                 })
                     }
                 }
             }
