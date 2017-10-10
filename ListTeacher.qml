@@ -65,7 +65,7 @@ Item {
         anchors.top: header.bottom
         width: wpercent(root, 100)
         height: hpercent(root, 50)
-        model: TeacherModel {}
+        model: modelsTeacher.item
         focus: true
         delegate: Item{
             width: wpercent(root, 100)

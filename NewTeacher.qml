@@ -4,6 +4,7 @@ import QtQuick.Controls 2.0
 import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.1
 import "qrc:/components" as BComponents
+import "qrc:/"
 
 Item {
     property int width_drawer: 25
@@ -31,6 +32,7 @@ Item {
                 placeholderText: qsTr("Nome")
                 height: hpercent(parent.parent,10); width: wpercent(parent.parent,45)
                 anchors.centerIn: parent
+                id: nameTeacher
             }
         }
         Item{
@@ -41,6 +43,7 @@ Item {
                 height: hpercent(parent.parent,10); width: wpercent(parent.parent,45)
                 anchors.centerIn: parent
                 validator : RegExpValidator { regExp : /[0-9]+\.[0-9]+/ }
+                id: phoneTeacher
             }
         }
         Item{
@@ -51,6 +54,7 @@ Item {
                 height: hpercent(parent.parent,10); width: wpercent(parent.parent,45)
                 anchors.centerIn: parent
                 validator : RegExpValidator { regExp : /[0-9]+\.[0-9]+/ }
+                id: hoursTeacher
             }
         }
     }
@@ -72,13 +76,14 @@ Item {
                     color: "#fbb03b"
                     text: "Confirmar"
                     action.onClicked: {
-                        modelsTeacher.append
+                        modelsTeacher.item.append
                                 ({
-                                     "name": "Bill Smith",
-                                     "number": "555 3264",
-                                     "worktime": "40",
+                                     "name": nameTeacher.text,
+                                     "number": phoneTeacher.text,
+                                     "worktime": hoursTeacher.text,
                                      "updateRestrictions": "false"
                                  })
+                        stackManager.pop()
                     }
                 }
             }
@@ -93,7 +98,7 @@ Item {
                     color: "#fbb03b"
                     text: "Cancelar"
                     action.onClicked: {
-                        stack.pop()
+                        stackManager.pop()
                     }
                 }
             }

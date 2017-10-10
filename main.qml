@@ -55,4 +55,8 @@ Window {
             initialItem: About{}
         }
     }
+    Loader{
+        id: modelsTeacher
+        source: "TeacherModel.qml"
+    }
 }
