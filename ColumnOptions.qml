@@ -51,24 +51,31 @@ Item {
                 console.log(height)
             }
         }
-//        BComponents.Button {
-//            anchors.horizontalCenter: parent.horizontalCenter
-//            width: wpercent(parent, 80)
-//            height: hpercent(parent, 10)
-//            action.onClicked: {
-//                test.color = "black"
-//            }
-//        }
         BComponents.Button {
-            text: (root.session)?"minha conta":"login"
+            text: "Help"
             anchors.horizontalCenter: parent.horizontalCenter
             width: wpercent(parent, 80)
             height: hpercent(parent, 10)
             action.onClicked: {
-                root.session = !root.session
+                test.color = "black"
+            }
+        }
+        BComponents.Button {
+            text: (root.session)?"log out":"log in"
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: wpercent(parent, 80)
+            height: hpercent(parent, 10)
+            action.onClicked: {
+//                root.session = !root.session
+                stack.push(loginComponent)
             }
         }
     }
+    Component{
+        id: loginComponent
+        Login {}
+    }
+
     Component{
         id: aboutComponent
         About {}

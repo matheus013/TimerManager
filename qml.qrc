@@ -4,5 +4,6 @@
         <file>ColumnOptions.qml</file>
         <file>Home.qml</file>
         <file>Description.qml</file>
+        <file>Login.qml</file>
     </qresource>
 </RCC>
