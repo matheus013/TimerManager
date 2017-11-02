@@ -32,6 +32,7 @@ Item {
                     text: "gerenciar turmas"
                     action.onClicked: {
                         //                        backgroundStack.color = "red"
+                        stackManager.push(listClassComponent)
                     }
                 }
             }
@@ -45,6 +46,7 @@ Item {
                     text: "gerenciar diciplinas"
                     action.onClicked: {
                         //                        backgroundStack.color = "blue"
+                        stackManager.push(listThemeComponent)
                     }
                 }
             }
@@ -63,5 +65,13 @@ Item {
     Component{
         id: listTeacherComponent
         ListTeacher{}
+    }
+    Component{
+        id: listClassComponent
+        ListClass{}
+    }
+    Component{
+        id: listThemeComponent
+        ListTheme{}
     }
 }

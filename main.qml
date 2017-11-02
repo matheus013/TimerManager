@@ -59,4 +59,12 @@ Window {
         id: modelsTeacher
         source: "TeacherModel.qml"
     }
+    Loader{
+        id: modelsClass
+        source: "ClassModel.qml"
+    }
+    Loader{
+        id: modelsTheme
+        source: "ThemeModel.qml"
+    }
 }

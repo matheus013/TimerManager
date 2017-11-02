@@ -7,5 +7,11 @@
         <file>ListTeacher.qml</file>
         <file>TeacherModel.qml</file>
         <file>NewTeacher.qml</file>
+        <file>ListClass.qml</file>
+        <file>ClassModel.qml</file>
+        <file>NewClass.qml</file>
+        <file>ListTheme.qml</file>
+        <file>ThemeModel.qml</file>
+        <file>NewTheme.qml</file>
     </qresource>
 </RCC>
