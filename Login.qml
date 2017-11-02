@@ -32,20 +32,22 @@ Item{
             }
         }
         Row{
+            height: hpercent(parent, 30)
+            width: wpercent(parent, 80)
             spacing: wpercent(parent,10)
            BComponents.Button{
-//                height: hpercent(parent,13)
-//                width: wpercent(parent,25)
+                height: hpercent(parent,45)
+                width: wpercent(parent,25)
                 color: "white"
                 text: "Login"
                 action.onClicked: {
-                    if(_console.login(username.text,password.text)) openSession()
+                    if(login(username.text, password.text)) openSession()
                     else invalidLoginPopUp()
                 }
             }
             BComponents.Button{
-//                height: hpercent(parent,13)
-//                width: wpercent(parent,25)
+                height: hpercent(parent,45)
+                width: wpercent(parent,25)
                 color: "white"
                 text: "Register"
                 action.onClicked: stackPages.push(registerComponent)

@@ -8,8 +8,12 @@ import QtGraphicalEffects 1.0
 Window {
     function hpercent(ref,percent) { return (ref.height/100)*percent; }
     function wpercent(ref,percent) { return (ref.width/100)*percent; }
-    function login(user, pass) {}
-    function logout() { session = false }
+    function login(user, pass) {return user == "test" && pass == "test"}
+    function openSession(){session = true}
+    function logout() {session = false}
+    function invalidLoginPopUp() {}
+
+
     property int width_drawer: 25
     property bool session: false
     id: root
